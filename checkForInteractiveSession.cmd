@@ -11,9 +11,10 @@
 :: )
 
 :checkinteractive
-		echo %cmdcmdline% | find /i "/c"
-		if %errorlevel% == 0 (
-			exit /B 1
-		) else (
-			exit /B 0
-		)
+	echo %cmdcmdline% | find /i "/c"
+	if %errorlevel% == 0 (
+		exit /B 1
+	) else (
+		exit /B 0
+	)
+exit /B 1
