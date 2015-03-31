@@ -13,6 +13,7 @@
 :: Return codes:
 :: 0: The current session is run with administrative privileges.
 :: 1: The current session is run without administrative privileges.
+:: 99: The process did not finish as expected.
 
 
 :isAdmin
@@ -22,4 +23,4 @@
 	) else (
 		exit /B 0
 	)
-exit /B 1
+exit /B 99
