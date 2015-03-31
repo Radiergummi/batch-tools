@@ -11,8 +11,8 @@
 :: (none)
 ::
 :: Return codes:
-:: 0: The requested value could be returned.
-:: 1: The specified key could not be found.
+:: 0: The current session is run with administrative privileges.
+:: 1: The current session is run without administrative privileges.
 
 
 :isAdmin
