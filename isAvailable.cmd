@@ -3,9 +3,6 @@
 :: by using a ping and parsing its return value. That is the currently best 
 :: way of reliably checking the connection to a client using batch only.
 ::
-:: Parameters:
-:: %1: The network client to check
-::
 :: Example:
 :: call :isAvailable laptop01
 :: if errorlevel 1 (
@@ -17,6 +14,14 @@
 :: ) else (
 ::   echo Machine is available in LAN.
 :: )
+::
+:: Parameters:
+:: %1: The network client to check
+::
+:: Return codes:
+:: 0: The requested value could be returned.
+:: 1: The specified key could not be found.
+
 
 :isAvailable
 	ping %~1 -n 2 -4 > %temp%\ping.tmp
