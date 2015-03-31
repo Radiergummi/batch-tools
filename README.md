@@ -2,7 +2,7 @@
 A collection of useful batch snippets
 
 ### Check for administrative privileges
-```dos
+```winbatch
 call :isAdmin
 if errorlevel 1 (
   echo This script has to be run as administrator!
