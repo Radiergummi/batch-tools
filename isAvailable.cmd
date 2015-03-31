@@ -22,6 +22,7 @@
 :: 0: The client is available in LAN.
 :: 1: The client is not available in the network. / The client could not be found.
 :: 2: The client is available, but only connected to WIFI or VPN (slow connection).
+:: 99: The process did not finish as expected.
 
 
 :isAvailable
@@ -37,4 +38,4 @@
 	) else (
 		exit /B 0
 	)
-exit /B 1
+exit /B 99
