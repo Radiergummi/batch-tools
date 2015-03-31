@@ -19,8 +19,9 @@
 :: %1: The network client to check
 ::
 :: Return codes:
-:: 0: The requested value could be returned.
-:: 1: The specified key could not be found.
+:: 0: The client is available in LAN.
+:: 1: The client is not available in the network.
+:: 2: The client is available, but only connected to WIFI or VPN (slow connection).
 
 
 :isAvailable
