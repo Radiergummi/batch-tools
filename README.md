@@ -52,3 +52,13 @@ if errorlevel 1 (
 
 echo %foo%     :: will be bar
 ```
+
+
+### Download a file from an URL (like wget on linux)
+```batchfile
+call :download %url_to_file% %local_file_path%
+
+if errorlevel 1 (
+  echo The file couldn't be downloaded. Bitsadmin error: %errorlevel%.
+)
+```
