@@ -13,6 +13,7 @@
 :: Return codes:
 :: 0: The requested value could be returned.
 :: 1: The specified key could not be found.
+:: 99: The process did not finish as expected.
 
 
 :config
@@ -28,5 +29,6 @@
 			exit /B 1
 		)
 		set %variable%=%%~j
+		exit /B 0
 	)
-exit /B 0
+exit /B 99
