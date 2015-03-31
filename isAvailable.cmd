@@ -3,6 +3,9 @@
 :: by using a ping and parsing its return value. That is the currently best 
 :: way of reliably checking the connection to a client using batch only.
 ::
+:: Parameters:
+:: %1: The network client to check
+::
 :: Example:
 :: call :isAvailable laptop01
 :: if errorlevel 1 (
@@ -16,16 +19,16 @@
 :: )
 
 :isAvailable
-		ping %~1 -n 2 -4 > %temp%\ping.tmp
-		findstr /C:"<1ms" %temp%\ping.tmp 1>nul
+	ping %~1 -n 2 -4 > %temp%\ping.tmp
+	findstr /C:"<1ms" %temp%\ping.tmp 1>nul
+	if errorlevel 1 (
+		findstr /C:"TTL=" %temp%\ping.tmp 1>nul
 		if errorlevel 1 (
-			findstr /C:"TTL=" %temp%\ping.tmp 1>nul
-			if errorlevel 1 (
-				exit /B 1
-			) else (
-				exit /B 2
-			)
+			exit /B 1
 		) else (
-			exit /B 0
+			exit /B 2
 		)
+	) else (
+		exit /B 0
+	)
 exit /B 1
