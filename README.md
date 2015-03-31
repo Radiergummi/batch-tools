@@ -8,6 +8,7 @@ Parameters, possible return codes and their meaning as well as a description and
 ### Check for administrative privileges
 ```batchfile
 call :isAdmin
+
 if errorlevel 1 (
   echo This script has to be run as administrator!
 )
@@ -17,6 +18,7 @@ if errorlevel 1 (
 ### Check for interactive session
 ```batchfile
 call :isInteractive
+
 if errorlevel 1 (
   echo Hi, %username%!
 )
@@ -26,6 +28,7 @@ if errorlevel 1 (
 ### Check if a machine is available in LAN
 ```batchfile
 call :isAvailable %client_netbios_name_or_IP%
+
 if errorlevel 1 (
   if %errorlevel% == 1 (
     echo Machine is not available at all.
@@ -41,6 +44,7 @@ if errorlevel 1 (
 ### Retrieve and set a value from an INI config file
 ```batchfile
 call :config %config_ini% "foo"
+
 if errorlevel 1 (
   echo Config value not set! Falling back to default...
   set foo=bar
