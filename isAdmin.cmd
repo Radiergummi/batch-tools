@@ -1,7 +1,7 @@
 :: This checks wether the user the shell is running under has administrative privileges.
 ::
 :: Example:
-:: call :checkadmin
+:: call :isAdmin
 :: if errorlevel 1 (
 ::    echo This script must be run as administrator.
 ::    exit
