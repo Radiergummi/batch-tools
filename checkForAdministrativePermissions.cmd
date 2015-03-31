@@ -8,9 +8,10 @@
 :: )
 
 :checkadmin
-net session >nul 2>&1
-if errorlevel 1 (
-	exit /B 1
-) else (
-	exit /B 0
-)
+	net session >nul 2>&1
+	if errorlevel 1 (
+		exit /B 1
+	) else (
+		exit /B 0
+	)
+exit /B 1
