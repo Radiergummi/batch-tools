@@ -11,7 +11,7 @@ if errorlevel 1 (
 
 
 ### Check for interactive session
-```dos
+```batchfile
 call :isInteractive
 if errorlevel 1 (
   echo Hi, %username%!
@@ -20,7 +20,7 @@ if errorlevel 1 (
 
 
 ### Check if a machine is available in LAN
-```dos
+```batchfile
 call :isAvailable %client_netbios_name_or_IP%
 if errorlevel 1 (
   if %errorlevel% == 1 (
