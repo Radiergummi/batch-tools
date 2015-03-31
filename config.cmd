@@ -2,13 +2,18 @@
 :: Comments and sections will be ignored, so you can store your configuration in neatly organized .ini-files.
 :: Attention: The quotation marks (") around the key are important!
 ::
+:: Example: 
+:: call :config settings.ini "key"    :: %key% will be value
+::
 :: Parameters:
 :: %1: The ini file to search in
 :: %2: The key to look for
 :: %3 (optional): The name of the variable to set the value in
 ::
-:: Example: 
-:: call :config settings.ini "key"    :: %key% will be value
+:: Return codes:
+:: 0: The requested value could be returned.
+:: 1: The specified key could not be found.
+
 
 :config
 	set configfile=%~1
