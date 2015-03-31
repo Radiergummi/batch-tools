@@ -6,6 +6,14 @@
 ::    echo This script must be run as administrator.
 ::    exit
 :: )
+::
+:: Parameters:
+:: (none)
+::
+:: Return codes:
+:: 0: The requested value could be returned.
+:: 1: The specified key could not be found.
+
 
 :isAdmin
 	net session >nul 2>&1
