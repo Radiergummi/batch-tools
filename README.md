@@ -32,3 +32,15 @@ if errorlevel 1 (
   echo Machine is available in LAN.
 )
 ```
+
+
+### Retrieve and set a value from an INI config file
+```batchfile
+call :config %config_ini% "foo"
+if errorlevel 1 (
+  echo Config value not set! Falling back to default...
+  set foo=bar
+)
+
+echo %foo%     :: will be bar
+```
