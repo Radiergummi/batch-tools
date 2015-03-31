@@ -21,7 +21,7 @@ if errorlevel 1 (
 
 ### Check if a machine is available in LAN
 ```dos
-call :isAvailable
+call :isAvailable %client_netbios_name_or_IP%
 if errorlevel 1 (
   if %errorlevel% == 1 (
     echo Machine is not available at all.
