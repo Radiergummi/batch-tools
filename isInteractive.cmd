@@ -9,6 +9,14 @@
 :: ) else (
 ::    exit
 :: )
+::
+:: Parameters:
+:: (none)
+::
+:: Return codes:
+:: 0: The session is interactive.
+:: 1: The session is not interactive.
+:: 99: The process did not finish as expected.
 
 :isInteractive
 	echo %cmdcmdline% | find /i "/c"
@@ -17,4 +25,4 @@
 	) else (
 		exit /B 0
 	)
-exit /B 1
+exit /B 99
