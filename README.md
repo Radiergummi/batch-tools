@@ -1,7 +1,7 @@
 # batch-tools
 > A collection of useful batch snippets  
 
-These helpers were developed in productive environments and do their job pretty solid.  
+These helpers were developed in productive environments and do their job pretty solid. Tested on Windows 7 and up.  
 The process is streamlined - each helper can be `call`ed and will return an errorlevel. That way, they pretty much work as functions in programming languages do.  
 Parameters, possible return codes and their meaning as well as a description and an example of the script can be found in each individual cmd file.
 
