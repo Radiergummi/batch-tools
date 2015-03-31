@@ -2,7 +2,7 @@
 A collection of useful batch snippets
 
 ### Check for administrative privileges
-```php
+```dos
 call :isAdmin
 if errorlevel 1 (
   echo This script has to be run as administrator!
@@ -11,7 +11,7 @@ if errorlevel 1 (
 
 
 ### Check for interactive session
-```
+```dos
 call :isInteractive
 if errorlevel 1 (
   echo Hi, %username%!
@@ -20,7 +20,7 @@ if errorlevel 1 (
 
 
 ### Check if a machine is available in LAN
-```
+```dos
 call :isAvailable
 if errorlevel 1 (
   if %errorlevel% == 1 (
