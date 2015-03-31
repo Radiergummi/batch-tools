@@ -20,7 +20,7 @@
 ::
 :: Return codes:
 :: 0: The client is available in LAN.
-:: 1: The client is not available in the network.
+:: 1: The client is not available in the network. / The client could not be found.
 :: 2: The client is available, but only connected to WIFI or VPN (slow connection).
 
 
