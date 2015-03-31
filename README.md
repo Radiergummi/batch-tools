@@ -19,7 +19,7 @@ if errorlevel 1 (
 ```batchfile
 call :isInteractive
 
-if errorlevel 1 (
+if %errorlevel% 0 (
   echo Hi, %username%!
 )
 ```
