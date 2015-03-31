@@ -7,7 +7,7 @@
 ::    exit
 :: )
 
-:checkadmin
+:isAdmin
 	net session >nul 2>&1
 	if errorlevel 1 (
 		exit /B 1
