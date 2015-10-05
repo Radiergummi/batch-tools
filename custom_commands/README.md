@@ -38,6 +38,9 @@ Simple alias for `move`. Serves the exact same purpose.
 #### `ps`
 Simple alias for `tasklist`. Serves the exact same purpose.
 
+#### `rm [[-f],[-r]] <file>...`
+Not-that-bad-but-incomplete implementation of `rm`. It has support for `-r`, `-f` or `-rf`/`-fr` so you can delete recursively and force deletion without prompt.
+
 #### `su [<username>]`
 Alias for `runas`. Tries to start an elevated shell. If no username is given as an argument, it will run it as `administrator`.
 
