@@ -38,7 +38,7 @@ Simple alias for `move`. Serves the exact same purpose.
 #### `ps`
 Simple alias for `tasklist`. Serves the exact same purpose.
 
-#### `rm [[-f],[-r]] <file 1> <file n>`
+#### `rm [[-f],[-r]] <file 1> ... <file n>`
 Not-that-bad-but-incomplete implementation of `rm`. It has support for `-r`, `-f` or `-rf`/`-fr` so you can delete recursively and force deletion without prompt.
 
 #### `su [<username>]`
