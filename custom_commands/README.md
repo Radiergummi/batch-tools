@@ -47,6 +47,10 @@ Alias for `runas`. Tries to run a command with elevated privileges.
 #### `top`
 Totally shitty implementation of top on Windows. Uses PS.
 
+#### `touch <file>`
+Uses the pretty unkown (but (https://technet.microsoft.com/en-us/library/bb490886.aspx)[documented]) `+,,` operator of the copy command to update the access timestamp of a file. If it does not exist, it will be created.
+
+
 ### What's this all about?
 If you have to work on many operating systems, you tend to mix commands in your head and get annoyed. These batch commands serve as a kind of aliases, but with more functionality: You can add help messages which remind you about the parameter details on Windows, add custom return codes and such.
 
