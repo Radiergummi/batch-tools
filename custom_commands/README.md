@@ -10,6 +10,9 @@ Simple alias for `type`. Serves the exact same purpose and is pipable.
 #### `clear`
 Simple alias for `cls`. Serves the exact same purpose.
 
+#### `cp <source> <destination>`
+Simple alias for `copy`. Serves the exact same purpose.
+
 #### `grep <term>`
 Favourite utility of all time. Compacts a `findstr` and is pipable.
 
@@ -25,6 +28,24 @@ Simple alias for `mklink`. Makes symbolic links.
 #### `locate [--onshares] <pattern>`
 Searches for a file on all physical drives, optionally also on mounted network shares using the parameter `--onshares`.
 Will return a each found file on a new line. You can also use an asterisk (`*`) as a substitution char for multiple or a question mark as a substitution char for a single character in the search pattern  
+
+#### `ls [-a] <directory>`
+Alias for `dir`. Allows to show detailed information by providing the parameter `-a`, otherwise returns simply each file on a new line.
+
+#### `mv <source> <destination>`
+Simple alias for `move`. Serves the exact same purpose.
+
+#### `ps`
+Simple alias for `tasklist`. Serves the exact same purpose.
+
+#### `su [<username>]`
+Alias for `runas`. Tries to start an elevated shell. If no username is given as an argument, it will run it as `administrator`.
+
+#### `sudo <command>`
+Alias for `runas`. Tries to run a command with elevated privileges.
+
+#### `top`
+Totally shitty implementation of top on Windows. Uses PS.
 
 ### What's this all about?
 If you have to work on many operating systems, you tend to mix commands in your head and get annoyed. These batch commands serve as a kind of aliases, but with more functionality: You can add help messages which remind you about the parameter details on Windows, add custom return codes and such.
