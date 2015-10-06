@@ -55,7 +55,7 @@ Alias for `runas`. Tries to run a command with elevated privileges.
 Totally shitty implementation of top on Windows. Uses PS.
 
 #### `touch <file>`
-Uses the pretty unkown (but [documented](https://technet.microsoft.com/en-us/library/bb490886.aspx)) `+,,` operator of the copy command to update the access timestamp of a file. If it does not exist, it will be created.
+Uses the pretty unknown (but [documented](https://technet.microsoft.com/en-us/library/bb490886.aspx)) `+,,` operator of the copy command to update the access timestamp of a file. If it does not exist, it will be created.
 
 
 <br>
