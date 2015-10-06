@@ -68,6 +68,9 @@ Simple alias for `tasklist`. Serves the exact same purpose.
 #### `rm [[-f],[-r]] <file 1> ... <file n>`
 Not-that-bad-but-incomplete implementation of `rm`. It has support for `-r`, `-f` or `-rf`/`-fr` so you can delete recursively and force deletion without prompt.
 
+#### `service <name> {start | stop | restart | status | pause | resume | disable | enable}`
+Allows to control various aspects of services with one command. Available sub-commands are `start`, `stop`, `restart`, `pause`, `resume`, `disable`, `enable` and even `status`. 
+
 #### `su [<username>]`
 Alias for `runas`. Tries to start an elevated shell. If no username is given as an argument, it will run it as `administrator`.
 
