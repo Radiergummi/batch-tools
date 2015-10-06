@@ -70,7 +70,7 @@ Alias for `runas`. Tries to start an elevated shell. If no username is given as 
 #### `sudo <command>`
 Alias for `runas`. Tries to run a command with elevated privileges.
 
-#### `<input> | tee [-a, --append] <file>`
+#### `tee [-a, --append] <file>`
 Real tee implementation for Windows. [Originally](http://www.robvanderwoude.com/unixports.php#TEE) written by [Rob van der Woude](http://www.robvanderwoude.com), modified by me. I only removed the Windows NT checks, reformatted the code and messages thrown to fit with the rest of these commands.  
 Can be used to redirect any input stream or file to the console and a file simultaneously. By using the `append` parameter, the text is appended instead of the file being overwritten.
 
