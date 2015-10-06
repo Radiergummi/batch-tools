@@ -26,7 +26,7 @@ Download the repo, store the files in a folder to your liking (technically, some
 
 
 
-### What does what, and how does it do it?
+## Available commands
 So far, I've built only a few commands, which you'll find described in the following list:
 
 #### `cat <text>`
@@ -89,6 +89,8 @@ Totally shitty implementation of top on Windows. Uses PS.
 #### `touch <file>`
 Uses the pretty unknown (but [documented](https://technet.microsoft.com/en-us/library/bb490886.aspx)) `+,,` operator of the copy command to update the access timestamp of a file. If it does not exist, it will be created.
 
+## Contribution
+I know that this list only contains a few commonly used Linux commands. Certainly, there are more and important commands which would be really neat to have available under Windows. If you have suggestions, wishes or contributions to make, please do so in this repo's issues and let me know.
 
 <br>
 <br>
