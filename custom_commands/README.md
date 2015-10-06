@@ -1,5 +1,9 @@
 # Custom batch commands
+This is a collection of linux-y aliases for batch commands which ease working with different OSes.  
 All files in this folder are supposed to be put somewhere in your `PATH` variable so they can be called as normal batch commands. That way, you can expand batch functionality without even noticing.  
+
+### What's this all about?
+If you have to work on many operating systems, you tend to mix commands in your head and get annoyed. These batch commands serve as a kind of aliases, but with more functionality: You can add help messages which remind you about the parameter details on Windows, add custom return codes and such.
 
 ### What does what, and how does it do it?
 So far, I've built only a few commands, which you'll find described in the following list:
@@ -53,9 +57,6 @@ Totally shitty implementation of top on Windows. Uses PS.
 #### `touch <file>`
 Uses the pretty unkown (but (https://technet.microsoft.com/en-us/library/bb490886.aspx)[documented]) `+,,` operator of the copy command to update the access timestamp of a file. If it does not exist, it will be created.
 
-
-### What's this all about?
-If you have to work on many operating systems, you tend to mix commands in your head and get annoyed. These batch commands serve as a kind of aliases, but with more functionality: You can add help messages which remind you about the parameter details on Windows, add custom return codes and such.
 
 <br>
 <br>
