@@ -58,6 +58,10 @@ Alias for `dir`. Allows to show detailed information by providing the parameter 
 #### `mv <source> <destination>`
 Simple alias for `move`. Serves the exact same purpose.
 
+#### `passwd [<username> [, <password>]]`
+Alias for `net user`. Allows to set a new password for the current user (no parameters) or another user (first parameter). If a second parameter is specified, it is used as the new password without further questions.  
+Due to the restrictions of Batch, the input is visible in plain text, so this should not be used in unsafe public environments.
+
 #### `ps`
 Simple alias for `tasklist`. Serves the exact same purpose.
 
