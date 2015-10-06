@@ -6,6 +6,8 @@ If you have to work on many operating systems, you tend to mix commands in your 
 
 ### How to use
 All files in this folder are supposed to be put somewhere in your `PATH` variable so they can be called as normal batch commands. That way, you can expand batch functionality without even noticing.  
+All commands come with a `--help` parameter which gives information about usage, parameters and provides a link to this repo; most come with a `--quiet` parameter for scripting to suppress output (you'll have to rely solely on errorlevels then).    
+All commands use the following return scheme: If the command works as intended, `errorlevel` will be `0`. If something goes wrong, `errorlevel` will be `1`.  
 Download the repo, store the files in a folder to your liking (technically, somewhere under `%windir%` would be good) and perform the following steps. They are copy-paste ready, by the way.
 
 ```batchfile
