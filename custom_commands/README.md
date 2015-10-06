@@ -1,9 +1,28 @@
 # Custom batch commands
 This is a collection of linux-y aliases for batch commands which ease working with different OSes.  
-All files in this folder are supposed to be put somewhere in your `PATH` variable so they can be called as normal batch commands. That way, you can expand batch functionality without even noticing.  
 
 ### What's this all about?
 If you have to work on many operating systems, you tend to mix commands in your head and get annoyed. These batch commands serve as a kind of aliases, but with more functionality: You can add help messages which remind you about the parameter details on Windows, add custom return codes and such.
+
+### How to use
+All files in this folder are supposed to be put somewhere in your `PATH` variable so they can be called as normal batch commands. That way, you can expand batch functionality without even noticing.  
+Download the repo, store the files in a folder to your liking (technically, somewhere under `%windir%` would be good) and perform the following steps. They are copy-paste ready, by the way.
+
+```batchfile
+    :: define a folder for your custom commands
+    set custom_folder=%windir%\custom_commands
+    
+    :: create a folder named "C:\Windows\custom_commands"
+    mkdir %custom_folder%
+    
+    :: add the folder to your path variable
+    set path=%path%;%custom_folder%
+    
+    :: update the path variable in your registry
+    reg add "HKLM\System\CurrentControlSet\Control\Session Manager\Environment" /f /v "Path" /t REG_SZ /d "%path%"
+```
+
+
 
 ### What does what, and how does it do it?
 So far, I've built only a few commands, which you'll find described in the following list:
@@ -60,20 +79,3 @@ Uses the pretty unknown (but [documented](https://technet.microsoft.com/en-us/li
 
 <br>
 <br>
-
-To keep things organized, you could do the following:
-
-```batchfile
-    :: define a folder for your custom commands
-    set custom_folder=%windir%\custom_commands
-    
-    :: create a folder named "C:\Windows\custom_commands"
-    mkdir %custom_folder%
-    
-    :: add the folder to your path variable
-    set path=%path%;%custom_folder%
-    
-    :: update the path variable in your registry
-    reg add "HKLM\System\CurrentControlSet\Control\Session Manager\Environment" /f /v "Path" /t REG_SZ /d "%path%"
-```
-
