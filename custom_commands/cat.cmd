@@ -46,7 +46,7 @@ if [%1] == [--version] (
 
 :: type STDIN
 type %*
-goto :eof
+exit /b 0
 
 :helptext
 	echo Usage: cat [option] ^<file 1^> ... ^<file n^>
