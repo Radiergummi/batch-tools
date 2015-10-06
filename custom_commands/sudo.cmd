@@ -35,7 +35,7 @@ if [%1] == [--version] (
 )
 
 :: execute elevated command
-runas /user:administrator %1
+runas /user:administrator "%*"
 exit /b 0
 
 :helptext
